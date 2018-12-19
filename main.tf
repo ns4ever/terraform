@@ -1,5 +1,5 @@
 provider "google" {
-  credentials = "${file("https://github.com/ns4ever/terraform/blob/master/iron-mountain-219809-2306b39c7557.json")}"
+  credentials = "${file('https://github.com/ns4ever/terraform/blob/master/iron-mountain-219809-2306b39c7557.json')}"
   project     = "${var.project}"
   region      = "${var.region}"
 }
