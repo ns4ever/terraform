@@ -12,15 +12,6 @@ resource "google_compute_network" "vpc" {
 routing_mode = "${var.routing_mode}"
 }
 
-// Create Subnet
-resource "google_compute_subnetwork" "subnet" {
-count =  "${var.noofsubnet}"
- name          ="${element(var.subnet_name,count.index)}"
- ip_cidr_range =  "${element(var.subnet_cidr,count.index)}"
- network       = "${var.vpcname}"
- depends_on    = ["google_compute_network.vpc"]
- region      = "${var.region}"
-private_ip_google_access = "${var.private_ip_google_access}"
-}
+
 
 
