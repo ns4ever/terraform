@@ -13,20 +13,6 @@ variable "routing_mode" {
     description = "VPC routing mode"
    default = "GLOBAL"
 }
-variable "noofsubnet" {
-    description = "noofsubnet"
-   default =2
-}
-variable "subnet_name" {
-    type = "list"
-    description = "The subnet name that are postifx after vpc name"
-
-}
-
-variable "subnet_cidr" {
-    type = "list"
-    description = "CIDR range of subnets"
-}
 
 variable "private_ip_google_access" {
     description = "Private ip for google access"
