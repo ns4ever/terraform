@@ -1,8 +1,0 @@
-project = "@project@"
-region          = "@region@"
-
-vpcname ="@vpcname@"
-noofsubnet =@noofsubnet@
-subnet_name = [@subnet_name@]
-subnet_cidr     = [@subnet_cidr@]
-private_ip_google_access = "@private_ip_google_access@"
