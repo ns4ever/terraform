@@ -1,6 +1,6 @@
 
 provider "google" {
-credentials = "${var.GOOGLE_APPLICATION_CREDENTIALS}"
+
   project     = "iron-mountain-219809"
   region      = "us-east4"
 }
